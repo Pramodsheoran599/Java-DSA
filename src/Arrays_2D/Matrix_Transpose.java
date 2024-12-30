@@ -22,9 +22,9 @@ public class Matrix_Transpose {
             }
         }
 
-        for (int i = 0 ; i < transpose_matrix.length ; i ++){
-            for (int j = 0 ; j < transpose_matrix[0].length ; j++){
-                System.out.print(transpose_matrix[i][j] + ", ");
+        for (int[] transposeMatrix : transpose_matrix) {
+            for (int j = 0; j < transpose_matrix[0].length; j++) {
+                System.out.print(transposeMatrix[j] + ", ");
             }
             System.out.println();
         }
