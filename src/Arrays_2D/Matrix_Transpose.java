@@ -16,12 +16,16 @@ public class Matrix_Transpose {
         //Create an Empty array of m x n size
         int[][] transpose_matrix = new int[m][n];
 
+
+        //Transpose
         for (int i = 0 ; i < n ; i ++){
             for (int j = 0 ; j < m; j++){
                 transpose_matrix[j][i] = array[i][j];
             }
         }
 
+
+        //Print Array
         for (int[] transposeMatrix : transpose_matrix) {
             for (int j = 0; j < transpose_matrix[0].length; j++) {
                 System.out.print(transposeMatrix[j] + ", ");
